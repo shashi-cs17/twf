@@ -11,7 +11,7 @@ ENTER EXPRESSION : <input type='text' name='exp'><input type="submit" value="GET
 		
  		$input = $_POST['exp'];
 		
- 			$url = "http://localhost/twf_task/api.php?input=".$input;
+ 			$url = "https://twf-full-stack-dev-task.herokuapp.com/api.php?input=".$input;
  		
  		$client = curl_init($url);
  		curl_setopt($client,CURLOPT_RETURNTRANSFER,true);
